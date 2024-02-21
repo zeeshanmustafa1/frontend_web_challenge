@@ -19,10 +19,6 @@ const HomePage = () => {
     setSelectedTitle("");
   };
 
-  const handleTitleChange = (title: React.SetStateAction<string>) => {
-    setSelectedTitle(title);
-  };
-
   const handleTextLengthChange = (
     event: any,
     newValue: React.SetStateAction<number>
@@ -48,7 +44,6 @@ const HomePage = () => {
           <TitleSelector
             titles={titlesByTopic[selectedTopic] as string[]}
             selectedTopic={selectedTopic}
-            onSelectTitle={handleTitleChange}
           />
         )}
         <TextLengthSlider
