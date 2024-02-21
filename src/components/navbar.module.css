@@ -1,0 +1,16 @@
+.navbar {
+  display: 'flex';
+  justify-content: space-between;
+  align-items: 'center';
+  padding: '0 16px';
+  background-color: '#09090D';
+  color: '#fff',
+}
+
+.navbar_color {
+  background-color: '#09090D';
+}
+
+.avatar{
+  margin-right: 8px;
+}
