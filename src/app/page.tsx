@@ -11,19 +11,14 @@ import {titlesByTopic} from "@/constants/dropDownConstants";
 
 const HomePage = () => {
   const [selectedTopic, setSelectedTopic] = useState("Fun");
-  const [selectedTitle, setSelectedTitle] = useState("");
   const [textLength, setTextLength] = useState(500);
 
   const handleTopicChange = (topic: React.SetStateAction<string>) => {
     setSelectedTopic(topic);
-    setSelectedTitle("");
   };
 
-  const handleTextLengthChange = (
-    event: any,
-    newValue: React.SetStateAction<number>
-  ) => {
-    setTextLength(newValue);
+  const handleTextLengthChange = (event: Event, newValue: number | number[]) => {
+    setTextLength(newValue as number);
   };
 
   return (
