@@ -2,7 +2,12 @@
 import React from "react";
 import { Slider, Typography } from "@mui/material";
 
-const TextLengthSlider = ({ value, onChange }) => {
+interface TextLengthSliderProps {
+  value: number;
+  onChange: (event: Event, value: number | number[]) => void;
+}
+
+const TextLengthSlider: React.FC<TextLengthSliderProps> = ({ value, onChange }) => {
   return (
     <div style={{ marginTop: "30px" }}>
       <Typography
