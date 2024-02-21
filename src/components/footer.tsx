@@ -17,7 +17,7 @@ const Footer = () => {
         <Button variant="outlined" color="primary">
           Back
         </Button>
-        <Button variant="outlined" endIcon={<SendIcon/>} color="white">
+        <Button variant="outlined" endIcon={<SendIcon/>}>
           Send
         </Button>
       </Toolbar>
