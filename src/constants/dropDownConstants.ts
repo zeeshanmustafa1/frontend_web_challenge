@@ -1,4 +1,14 @@
-export const titlesByTopic = {
+type TitlesByTopic = {
+    Fun: string[];
+    Education: string[];
+    Sports: string[];
+    News: string[];
+    Investment: string[];
+    Facts: string[];
+    [key: string]: string[]; // Index signature
+};
+
+export const titlesByTopic: TitlesByTopic = {
     Fun: [
         "Board games revival",
         "Comedy trends",
