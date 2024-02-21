@@ -1,15 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
 
 ```bash
-clone the project
-install the packages
+clone the project folder
+cd to frontend_web_challenge
+
+install the packages by command 
 "npm install"
 
-To run the project
+To run the project by 
 "npm run dev"
 ```
 
