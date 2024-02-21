@@ -5,7 +5,7 @@ type TitlesByTopic = {
     News: string[];
     Investment: string[];
     Facts: string[];
-    [key: string]: string[]; // Index signature
+    [key: string]: string[] | undefined; // Add index signature
 };
 
 export const titlesByTopic: TitlesByTopic = {
