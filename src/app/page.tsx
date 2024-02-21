@@ -46,7 +46,7 @@ const HomePage = () => {
         />
         {selectedTopic && (
           <TitleSelector
-            titles={titlesByTopic[selectedTopic]}
+            titles={titlesByTopic[selectedTopic] as string[]}
             selectedTitle={selectedTitle}
             selectedTopic={selectedTopic}
             onSelectTitle={handleTitleChange}
